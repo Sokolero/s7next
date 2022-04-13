@@ -1,0 +1,67 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #040b11;
+}
+
+.h2 {
+  color: #f8efb5;
+  text-align: center;
+  font-size: 20px;
+}
+
+.link {
+  color: #74b0b6;
+  text-decoration: underline;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  min-width: 300px;
+}
+
+.input {
+  margin-bottom: 6px;
+}
+
+.label {
+  color: #f8efb5;
+}
+
+.submit {
+  margin-top: 6px;
+  padding: 12px 0;
+  color: #fff;
+  background-color: #28595e;
+  border: none;
+  text-transform: uppercase;
+}
+/* janet.weaver@reqres.in */
+
+.error {
+  color: red;
+  margin-bottom: 16px;
+}
+
+.preloader {
+  margin-bottom: 40px;
+  font-size: 36px;
+  color: #fff;
+  animation: rotated 3s linear infinite;
+}
+
+@keyframes rotated {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(360deg);
+  }
+}

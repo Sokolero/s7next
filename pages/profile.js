@@ -3,13 +3,20 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link';
 import { useRouter } from "next/router";
-import styles from '../styles/Home.module.css';
-import ActiveLink from "./components/ActiveLink";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { useSelector } from "react-redux";
+import styles from "../styles/Profile.module.css";
 
 
-export default function Home() {
+export default function Profile() {
+  const router = useRouter();
+  const token = useSelector((state) => state.login.credentials.token);
+
+  if (!token) {
+    router.push("/login");
+  }
+
   return (
     <div className={styles.App}>
       <Head>
@@ -19,9 +26,7 @@ export default function Home() {
       </Head>
       <Header />
       <main className={styles.main}>
-        <div className={styles.welcome}>
-          <div className={styles.welcome__text}>Welcome!</div>
-        </div>
+        Private Info from User profile
       </main>
       <Footer />
       </div>

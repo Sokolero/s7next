@@ -1,0 +1,10 @@
+.App {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+.main {
+  padding: 48px 20px;
+  text-align: center;
+}

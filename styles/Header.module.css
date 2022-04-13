@@ -1,0 +1,35 @@
+.header__wrapper {
+  border-bottom: solid 1px grey;
+  shadow-box: 0 1px grey;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-weight: 900;
+  font-size: 32px;
+  color: coral;
+}
+
+.nav__list {
+  display: flex;
+}
+
+.nav__item {
+  margin-right: 32px;
+  text-decoration: none;
+}
+
+.nav__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.nav__link--active {
+  color: brown;
+}

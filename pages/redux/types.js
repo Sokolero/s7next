@@ -1,0 +1,13 @@
+export const SET_USERS = "SET_USERS";
+export const SAVE_TO_LOCAL_STORAGE = "SAVE_TO_LOCAL_STORAGE";
+export const LOAD_FROM_LOCAL_STORAGE = "LOAD_FROM_LOCAL_STORAGE";
+
+export const CREATE_USER = "CREATE_USER";
+export const REMOVE_USER = "REMOVE_USER";
+
+export const SET_FILTER = "SET_FILTER";
+
+export const LOGIN_REQUEST = "LOGIN_REQUEST";
+export const LOGIN_FAILURE = "LOGIN_FAILURE";
+export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
+export const LOGOUT = "LOGOUT";
