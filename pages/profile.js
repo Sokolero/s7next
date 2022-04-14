@@ -17,6 +17,10 @@ export default function Profile() {
     router.push("/login");
   }
 
+  if (!token) {
+    return <h2>Authentication check...</h2>
+  }
+
   return (
     <div className={styles.App}>
       <Head>

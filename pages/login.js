@@ -50,7 +50,7 @@ export default function Login() {
         <small className={styles.error}>
           {errors.password?.type === "required" && "Password is required"}
         </small>
-        <button className={styles.submit} type="submit">Sign in</button>
+        <button className={styles.submit} disabled={preloader} type="submit">Sign in</button>
           <small className={styles.error}>
             { error }
           </small>
